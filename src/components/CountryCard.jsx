@@ -9,7 +9,11 @@ const CountryCard = (props) => {
       to={`/countries/${countryCode}`}
       style={{ textDecoration: "none", color: "inherit" }}
     >
-      <div className="w-60 h-40 p-6 bg-white rounded-lg  shadow-2xl border-1 border-y-pink-300 border-x-purple-400 dark:bg-gray-900">
+      <div
+        className="w-60 h-40 p-6 bg-white rounded-lg  shadow-2xl border-1 border-y-pink-300 
+      hover:bg-[#fcfcfc]
+      border-x-purple-400 dark:bg-gray-900 dark:hover:bg-gray-950"
+      >
         <h3 className="text-purple-600 dark:text-purple-300 text-xl mb-3">
           {countryName}
         </h3>

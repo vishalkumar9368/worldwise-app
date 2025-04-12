@@ -32,7 +32,7 @@ const SearchPage = () => {
     return matchesSearch && matchesRegion;
   });
   return (
-    <div className=" max-w-6xl mx-auto px-6 py-6 min-h-screen h-auto">
+    <div className=" max-w-6xl mx-auto px-6 py-6 min-h-screen h-full">
       <div className="  flex flex-col items-center justify-center">
         <h1 className="text-3xl font-semibold text-purple-600 text-center">
           Search a Country
@@ -43,11 +43,11 @@ const SearchPage = () => {
             placeholder="Search a country..."
             onChange={handleUserInput}
             className="px-4 py-2 border-2 rounded-xl border-purple-600
-            w-xs placeholder:text-gray-700 dark:placeholder:text-gray-400"
+            w-xs placeholder:text-gray-700 dark:placeholder:text-gray-300 dark:border-purple-700"
           />
           <select
             onChange={handleSelectedRegion}
-            className="w-xs px-4 py-2 border-2 rounded-xl border-purple-600 text-gray-700 dark:text-gray-400"
+            className="w-xs px-4 py-2 border-2 rounded-xl border-purple-600 text-gray-700 dark:text-gray-300 dark:border-purple-700"
           >
             <option value="all">All regions</option>
             <option value="Africa">Africa</option>

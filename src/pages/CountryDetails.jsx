@@ -17,17 +17,22 @@ const CountryDetails = () => {
 
   return (
     <div className="max-w-6xl mx-auto p-6">
-      <div className="flex flex-col  max-w-xl mx-auto p-8 items-start rounded-lg bg-white shadow-2xl gap-1 border-1 border-y-pink-300 border-x-purple-400  dark:bg-gray-900 dark:text-gray-300 ">
-        <button onClick={handleBack}>&larr; Back</button>
-        <h1 className="text-3xl font-semibold text-center w-full py-4 text-purple-700 dark:text-purple-300 ">
+      <div className="flex flex-col  max-w-xl mx-auto p-8 items-start rounded-lg bg-white shadow-2xl gap-2 border-1 border-y-pink-300 border-x-purple-400  dark:bg-gray-900 dark:text-gray-300 ">
+        <button
+          onClick={handleBack}
+          className="shadow-xl px-3 py-1 rounded-lg flex items-center  justify-center text-white bg-purple-500 "
+        >
+          &larr;Back
+        </button>
+        <h1 className="text-4xl font-semibold text-center w-full pb-8 pt-2 text-purple-700 dark:text-purple-300 ">
           {country.name.common}
         </h1>
-        <div>
+        <div className="flex gap-10">
           <strong> Flag:</strong>{" "}
           <img
             src={country.flags.png}
             alt={country.flags.alt}
-            className="h-30"
+            className="h-20 shadow-md "
           />
         </div>
         <p>

@@ -41,7 +41,7 @@ export const CountriesProvider = ({ children }) => {
   //whenever theme changes run this effect
   // Persist theme to localStorage
   useEffect(() => {
-    localStorage.setItem("theme", theme);
+    localStorage.setItem("world_wise_theme", theme);
     if (theme === "dark") {
       document.documentElement.classList.add("dark"); // Add dark class to html
     } else {
